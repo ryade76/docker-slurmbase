@@ -13,6 +13,8 @@ You can create and run the configured containers with command `docker-compose up
 
 For a stopping them run `docker-compose down`. 
 
+If you have kubernetes running, go into the compose directory and run the following command: `kubectl apply -k kubernetes`.
+
 **Configuration variables**:
 
   * `SLURM_CLUSTER_NAME`: the name of the SLURM cluster.
