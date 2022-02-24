@@ -9,6 +9,8 @@ services:
       SLURM_NODE_NAMES: slurmd
     tty: true
     hostname: slurmctld
+    ports:
+      - 6817:6817
     networks:
       default:
         aliases:
@@ -23,6 +25,8 @@ services:
       SLURM_NODE_NAMES: slurmd
     tty: true
     hostname: slurmd
+    ports:
+      - 6818:6818
     networks:
       default:
         aliases:
