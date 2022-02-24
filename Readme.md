@@ -7,7 +7,7 @@ The Docker SLURM cluster is configured with the following software packages:
 - Ubuntu 20.04 LTS
 - SLURM 21.08.5 
 
-To updater the containter image, use the Dockerfile and change the variables to whatever release you want, it may break some things, so be prepared. Don't forget to update the docker-compose.yml with your new image file after the build!
+To updater the containter image, use the Dockerfile and change the variables to whatever release you want, it may break some things, so be prepared. Don't forget to update the docker-compose.yml with your new image file after the build! (you will also need to re-run kompose in compose to update the .yaml's for k8s.
 
 It runs things simply with supervisord. this compose file should be parsable by https://kompose.io if you wanted to run this on kubernetes, I tried to keep the hard stuff in the container file itself while making sure this could run most anywhere.
 
